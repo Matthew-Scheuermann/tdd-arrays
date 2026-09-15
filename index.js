@@ -11,8 +11,9 @@
  */
 export function getFirst(array) {
   // TODO
+  return array[0];
 }
-console.log("hello world");
+
 /**
  * @param {T[]} array - an array of elements of type T
  * @returns {T} the last element of the array
@@ -26,7 +27,9 @@ console.log("hello world");
  */
 export function getLast(array) {
   // TODO
+  return array[array.length - 1];
 }
+// console.log(getLast([true, false, true]));
 
 /**
  * @param {T[]} array - an array of elements of type T
@@ -43,7 +46,15 @@ export function getLast(array) {
  */
 export function getFirstLast(array) {
   // TODO
+  if (array.length === 0) {
+    return [];
+  } else if (array.length === 1) {
+    return [array[0]];
+  } else {
+    return [array[0], array[array.length - 1]];
+  }
 }
+// console.log(getFirstLast([-5, 6, 7]));
 
 /**
  * @param {string} str1 - the first string
@@ -60,7 +71,15 @@ export function getFirstLast(array) {
  */
 export function sharesFirstLetter(str1, str2) {
   // TODO
+  if (str1 === "" || str2 === "") {
+    return false;
+  } else if (str1[0] === str2[0]) {
+    return true;
+  } else {
+    return false;
+  }
 }
+// console.log(sharesFirstLetter("apple", ""));
 
 /**
  * @param {number[]} numbers - an array of numbers
@@ -75,7 +94,13 @@ export function sharesFirstLetter(str1, str2) {
  */
 export function quintuple(numbers) {
   // TODO
+  let multiply = [];
+  for (let i = 0; i < numbers.length; i++) {
+    multiply.push(numbers[i] * 5);
+  }
+  return multiply;
 }
+// console.log(quintuple([1, 2, 3, 4, 5]));
 
 /**
  * There is a general rule for making nouns plural in English:
