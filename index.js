@@ -12,7 +12,7 @@
 export function getFirst(array) {
   // TODO
 }
-
+console.log("hello world");
 /**
  * @param {T[]} array - an array of elements of type T
  * @returns {T} the last element of the array

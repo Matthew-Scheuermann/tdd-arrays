@@ -6,5 +6,19 @@
   },
   "dependencies": {
     "vitest": "^4.0.16"
-  }
+  },
+  "version": "1.0.0",
+  "description": "This problem set is all about arrays!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Matthew-Scheuermann/tdd-arrays.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Matthew-Scheuermann/tdd-arrays/issues"
+  },
+  "homepage": "https://github.com/Matthew-Scheuermann/tdd-arrays#readme"
 }
