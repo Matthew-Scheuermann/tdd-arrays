@@ -121,7 +121,17 @@ export function quintuple(numbers) {
  */
 export function pluralize(words) {
   // TODO
+  let result = [];
+  for (let i = 0; i < words.length; i++) {
+    if (!words[i].endsWith("s")) {
+      result.push(words[i] + "s");
+    } else {
+      result.push(words[i] + "es");
+    }
+  }
+  return result;
 }
+// console.log(pluralize(["cat", "bus"]));
 
 /**
  * @param {boolean[]} attendance - an array representing student attendance
@@ -138,7 +148,15 @@ export function pluralize(words) {
  */
 export function countAttendance(attendance) {
   // TODO
+  let count = 0;
+  for (let i = 0; i < attendance.length; i++) {
+    if (attendance[i] === true) {
+      count++;
+    }
+  }
+  return count;
 }
+// console.log(countAttendance([true, true, false, false]));
 
 /**
  * @param {string[]} sentence - an array of words
@@ -154,7 +172,19 @@ export function countAttendance(attendance) {
  */
 export function getLongestWord(sentence) {
   // TODO
+  if (sentence.length === 0) {
+    return null;
+  }
+
+  let longest = sentence[0];
+  for (let i = 0; i < sentence.length; i++) {
+    if (sentence[i].length > longest.length) {
+      longest = sentence[i];
+    }
+  }
+  return longest;
 }
+// console.log(getLongestWord(["hi", "hello", "greetings"]));
 
 /**
  * @param {string[]} playlist - an array of song titles
