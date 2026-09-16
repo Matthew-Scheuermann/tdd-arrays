@@ -226,4 +226,16 @@ export function findSong(playlist, song) {
  */
 export function findSpy(map) {
   // TODO
+  for (let i = 0; i < map.length; i++) {
+    for (let j = 0; j < map[i].length; j++) {
+      if (map[i][j] === "spy") return [i, j];
+    }
+  }
+  return null;
 }
+console.log(
+  findSpy([
+    ["tree", "spy"],
+    ["lamp", "guard"],
+  ]),
+);
