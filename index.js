@@ -233,9 +233,9 @@ export function findSpy(map) {
   }
   return null;
 }
-console.log(
-  findSpy([
-    ["tree", "spy"],
-    ["lamp", "guard"],
-  ]),
-);
+// console.log(
+//   findSpy([
+//     ["tree", "spy"],
+//     ["lamp", "guard"],
+//   ]),
+// );
